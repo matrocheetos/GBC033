@@ -1,0 +1,30 @@
+> especificações do computador:
+> CPU: AMD Ryzen 5 3600 @ 4GHz
+> RAM: 16GB DDR4 @ 2800MHz
+
+===== BUBBLE SORT =====
+
+bolha l1 (3.68 secs, 3,046,286,560 bytes)
+bolha l2 (4.36 secs, 3,260,702,944 bytes)
+bolha l3 (3.75 secs, 3,049,458,064 bytes)
+bolha l4 (4.42 secs, 3,263,564,400 bytes)
+bolha l5 (17.31 secs, 12,679,672,080 bytes)
+bolha l6 (17.65 secs, 12,677,050,640 bytes)
+bolha l7 (16.85 secs, 12,890,708,944 bytes)
+
+bolha1 l1 (0.13 secs, 7,081,744 bytes)
+bolha1 l2 (4.97 secs, 3,260,801,456 bytes)
+bolha1 l3 (3.81 secs, 3,049,826,088 bytes)
+bolha1 l4 (4.49 secs, 3,263,663,096 bytes)
+bolha1 l5 (17.16 secs, 12,680,040,104 bytes)
+bolha1 l6 (16.33 secs, 12,677,050,848 bytes)
+bolha1 l7 (17.82 secs, 12,890,774,688 bytes)
+
+bolha2 l1 (1.24 secs, 745,330,912 bytes)
+bolha2 l2 (4.02 secs, 2,771,899,704 bytes)
+bolha2 l3 > 60 secs
+bolha2 l4 (3.84 secs, 2,774,084,408 bytes)
+bolha2 l5 > 60 secs
+bolha2 l6 (10.87 secs, 6,984,335,352 bytes)
+bolha2 l7 > 60 secs
+
