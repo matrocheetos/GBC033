@@ -26,7 +26,7 @@ trocas ((x:y:zs),i)
 bolha1 :: (Ord a) => [a] -> ([a],Int)
 bolha1 [] = ([],0)
 bolha1 lista =
-    if parada1 lista
+    if parada lista
     then (lista,0)
     else bolhaOrd1 lista 0 (length lista)
 
@@ -43,12 +43,12 @@ trocas1 ((x:y:zs),i)
         where   (lst1,j1) = trocas1((x:zs),(i+1))
                 (lst2,j2) = trocas1((y:zs),(i))
 
-parada1 :: (Ord a) => [a] -> Bool
-parada1 [] = True
-parada1 [x] = True
-parada1 (x:y:zs)
+parada :: (Ord a) => [a] -> Bool
+parada [] = True
+parada [x] = True
+parada (x:y:zs)
     | x > y = False
-    | otherwise = parada1 (y:zs)
+    | otherwise = parada (y:zs)
 
 
 -- variacao 2:
@@ -65,14 +65,7 @@ bolhaOrd2 lista i n = bolhaOrd2 lst j (n-1)
 trocas2 :: (Ord a) => ([a],Int) -> ([a],Int)
 trocas2 ([x],i) = ([x],i)
 trocas2 ((x:y:zs),i)
-    | x > y = if parada2 (x:zs) then ((y:x:zs),i+1) else ((y:lst1),j1)
-    | otherwise = if parada2 (y:zs) then ((x:y:zs),(i)) else ((x:lst2),j2)
+    | x > y = if parada (x:zs) then ((y:x:zs),i+1) else ((y:lst1),j1)
+    | otherwise = if parada (y:zs) then ((x:y:zs),(i)) else ((x:lst2),j2)
         where   (lst1,j1) = trocas2((x:zs),(i+1))
                 (lst2,j2) = trocas2((y:zs),(i))
-
-parada2 :: (Ord a) => [a] -> Bool
-parada2 [] = True
-parada2 [x] = True
-parada2 (x:y:zs)
-    | x > y = False
-    | otherwise = parada2 (y:zs)
